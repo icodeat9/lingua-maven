@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Translators</h1>
+
+<div id="translators">
+  <% @translators.each do |translator| %>
+    <%= render translator %>
+    <p>
+      <%= link_to "Show this translator", translator %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New translator", new_translator_path %>

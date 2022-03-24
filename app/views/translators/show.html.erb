@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @translator %>
+
+<div>
+  <%= link_to "Edit this translator", edit_translator_path(@translator) %> |
+  <%= link_to "Back to translators", translators_path %>
+
+  <%= button_to "Destroy this translator", @translator, method: :delete %>
+</div>
