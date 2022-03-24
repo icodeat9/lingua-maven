@@ -1,4 +1,4 @@
-<%= form_with(model: translator) do |form| %>
+<%= simple_form_for translator do |form| %>
   <% if translator.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(translator.errors.count, "error") %> prohibited this translator from being saved:</h2>
@@ -28,7 +28,7 @@
 
   <div>
     <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
+    <%= form.association :user, label: false, label_method: :full_name, value_method: :id %>
   </div>
 
   <div>

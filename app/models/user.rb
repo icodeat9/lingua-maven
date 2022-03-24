@@ -4,6 +4,10 @@ class User < ApplicationRecord
   validates :email, presence: true
   validate :email_should_be_ascii
 
+  def full_name
+    given_name + " " + family_name
+  end
+
   private
 
   def email_should_be_ascii

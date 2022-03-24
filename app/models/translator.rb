@@ -1,4 +1,5 @@
 class Translator < ApplicationRecord
+  belongs_to :user, optional: true
   validates :profile_enabled, acceptance: true, if: -> { slug.present? }
   validates :slug, presence: true, if: -> { profile_enabled }
 
