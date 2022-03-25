@@ -35,8 +35,17 @@ class UserTest < ActiveSupport::TestCase
     user = User.new
     user.given_name = "Michael"
     user.family_name = ""
-    user.email = 'piña@test.com'
+    user.email = 'pina@test.com'
 
     assert_not user.save, "Saved the user with family name missing when given name is not"
   end
+
+  test "should not save with an invalid preferred time zone" do
+    user = User.new
+    user.preferred_timezone = "America/Santo_Domingues"
+    user.email = 'pina@test.com'
+
+    assert_not user.save, "Saved the user with an invalid preffered time zone"
+  end
+
 end

@@ -28,7 +28,7 @@
 
   <div>
     <%= form.label :preferred_timezone, style: "display: block" %>
-    <%= form.input :preferred_timezone, as: :time_zone, label: false %>
+    <%= form.select :preferred_timezone, time_zone_options_for_select(form.object.preferred_timezone, nil, TZInfo::Timezone), include_blank: true %>
   </div>
 
   <div>

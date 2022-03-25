@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# This app is running on Ruby 3.0.0 and Rails 7.0.2.3
 
-Things you may want to cover:
+# Clonning
+  `git clone git@github.com:AaronPresley/lingua-maven.git` or `git clone https://github.com/AaronPresley/lingua-maven.git`
 
-* Ruby version
+# Setup
+  1. Make sure that you have the right Ruby version on your local.
+  2. Run `gem install bundler` to get the latest bundler for your Ruby version.
+  3. Run `bundle install` to install all gems and dependencies.
+  4. Run `rails db:setup` to generate the development and test database, the app is currently running with `sqlite`.
+  5. Run `rails s` then open your browser and  go to `localhost:3000`.
 
-* System dependencies
+# Test
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ - Run `rails tests tests/models` and `rails tests test/controllers`
