@@ -3,7 +3,7 @@
 # This app is running on Ruby 3.0.0 and Rails 7.0.2.3
 
 # Clonning
-  `git clone git@github.com:AaronPresley/lingua-maven.git` or `git clone https://github.com/AaronPresley/lingua-maven.git`
+  `git clone git@github.com:icodeat9/lingua-maven.git` or `git clone https://github.com/icodeat9/lingua-maven.git`
 
 # Setup
   1. Make sure that you have the right Ruby version on your local.
